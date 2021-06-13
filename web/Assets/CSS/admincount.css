@@ -1,0 +1,115 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600&display=swap');
+
+.admin__count{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.admin__count-user,
+.admin__count-house,
+.admin__count-mssg{ 
+    width: 350px;  
+    height: 250px;
+    display: flex; 
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    flex-direction: column;
+}
+
+.admin__count-user p,
+.admin__count-house p,
+.admin__count-mssg p{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.admin__count-user{
+    background: #3AFF73;
+    box-shadow: 7px 7px 10px #05BF6D;
+    color: #fff;
+}
+
+.admin__count-house{
+    background: #A559F5; 
+    box-shadow: 7px 7px 10px #BE22F4;
+    color: #fff;
+}
+
+.admin__count-mssg{
+    background:#FF7F36; 
+    box-shadow: 7px 7px 10px #F95716; 
+    color: #fff;
+}
+
+.admin__count-user:hover{
+    color: #3AFF73;
+    background: #fff;
+    border: 3px solid #3AFF73;
+}
+
+.admin__count-house:hover{
+    color: #A559F5;
+    background: #fff;
+    border: 3px solid #A559F5;
+}
+
+.admin__count-mssg:hover{
+    color: #FF7F36;
+    background: #fff;
+    border: 3px solid #FF7F36;
+}
+
+.admin__welcome{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 320px){
+    .admin__count{
+        flex-direction: column;
+    }
+    
+    .admin__count-user,
+    .admin__count-mssg,
+    .admin__count-house{
+        width: 250px;
+        margin: 20px
+    }
+    
+    .admin__welcome{
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px){
+    .admin__count{
+        flex-direction: column;
+    }
+    
+    .admin__count-user,
+    .admin__count-mssg,
+    .admin__count-house{
+        width: 300px;
+        margin: 20px
+    }
+    
+    .admin__welcome{
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+
+

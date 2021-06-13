@@ -1,0 +1,98 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600&display=swap');
+
+body{
+    font-family: 'Alegreya', serif;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.addhouse__split-screen{
+    display: flex;
+    flex-direction: column;
+}
+
+.addhouse__left{
+    height: 200px;
+}
+
+.addhouse__left img{
+    height: 200px;
+}
+
+.addhouse__left, .addhouse__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addhouse__right .addhouse__copy{
+    color: #000;
+    text-align: center;
+}
+
+.addhouse__right form{
+    width: 328px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="file"],
+form textarea, form select{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #FF5A60;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.addhouse__btn{
+    display: block;
+    width: 100%;
+    background: #FF5A60;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.addhouse__btn:hover{
+    color: #FF5A60;
+    background: #fff;
+    border: 1px solid #FF5A60;
+}
+
+.addhouse__address textarea{
+    resize: none;
+}
+
+@media screen and (min-width:800px) {
+    .addhouse__split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .addhouse__left, .addhouse__right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}

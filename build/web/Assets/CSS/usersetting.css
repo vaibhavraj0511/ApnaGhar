@@ -1,0 +1,160 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600&display=swap');
+
+.usersetting__wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 8px 8px 10px #008b8b;
+    margin-top: 100px;
+}
+
+.usersetting__wrapper .usersetting__title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #FF5A60;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.usersetting__wrapper .usersetting__form{
+    width: 100%;
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field label{
+    width: 200px;
+    color: #000;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field .usersetting__input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field .usersetting__input:focus{
+    border: 1px solid #FF5A60;
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field .usersetting__btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #FF5A60;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field:last-child{
+    margin-bottom: 0;
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field .usersetting__btn:hover{
+    color: #FF5A60;
+    background-color: #fff;
+    border: 1px solid #FF5A60;
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field .passwordfield{
+    width: 100%;
+    display: flex;
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field .usersetting__password{
+    width: 90%;
+    padding-right: 5px;
+}
+
+.show-hide{
+    margin-right: 5px;
+    right: 15px;
+    color: #FF5A60;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.show-hide i{
+    cursor: pointer;
+}
+
+.show-hide i.hide:before{
+    content: "\f070";
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field .usersetting__password:valid ~ .show-hide i{
+    display: block;
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field .usersetting__passwords{
+    width: 90%;
+    padding-right: 5px;
+}
+
+.show-hides{
+    margin-right: 5px;
+    right: 15px;
+    color: #FF5A60;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.show-hides i{
+    cursor: pointer;
+}
+
+.show-hides i.hides:before{
+    content: "\f070";
+}
+
+.usersetting__wrapper .usersetting__form .usersetting__input-field .usersetting__passwords:valid ~ .show-hides i{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 320px){
+    .usersetting__wrapper{
+        margin-top: 30px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px){
+    .usersetting__wrapper{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .usersetting__wrapper .usersetting__form .usersetting__input-field{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .usersetting__wrapper .usersetting__form .usersetting__input-field label{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 766px){
+   
+}

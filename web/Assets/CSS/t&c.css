@@ -1,0 +1,54 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya', serif;
+    justify-content: center;
+    text-align: center;
+}
+
+.terms-container{
+    width: 100%;
+    height: auto;
+    display: inline;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 50px;
+    margin-right: 100px;
+}
+
+.terms-container h1{
+    color: #FF5A60;
+    text-align: center;
+}
+
+.terms-container p{
+    font-size: 20px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+@media screen and (max-width: 350px){
+    .terms-container h1{
+        font-size: 24px;
+    }
+
+    .terms-container p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 351px) and (max-width: 766px){
+    .terms-container h1{
+        font-size: 28px;
+    }
+
+    .terms-container p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

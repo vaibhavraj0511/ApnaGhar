@@ -1,0 +1,168 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600&display=swap');
+
+body{
+    font-family: 'Alegreya', serif;
+}
+
+.viewhouse__container{
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    margin-top: 60px;
+}
+
+.viewhouse__cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    margin-top: 0px;
+}
+
+.viewhouse__card{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #008b8b;
+}
+
+.viewhouse__card-container{
+    position: relative;
+    clip-path: polygon(0 0, 100% 0,100% 85%,0 100%);
+}
+
+.viewhouse__card-container>img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+    height: 250px;
+}
+
+.viewhouse__detail{
+    padding-left: 15px;
+}
+
+.viewhouse__detail>.viewhouse__detail-heading{
+    font-size: 17px;
+    font-weight: 1000;
+    color: #000;
+    margin: 6.5px;
+}
+
+.viewhouse__detail .viewhouse__detail-text{
+    font-size: 15px;
+}
+
+/*Search Box*/
+.searchbox__container{
+    width: 25%;
+    position: absolute;
+    left: 40%;
+}
+
+.searchbox__searchbox{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchbox__search{
+    width: 100%;
+    border: 3px solid #FF5A60;
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    color: #000;
+    outline: none;
+    font-family: 'Alegreya', serif;
+}
+
+.searchbox__btn{
+    width: 40px;
+    height: 30px;
+    border: 1px solid #FF5A60;
+    background: #FF5A60;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.viewhouse__notfound{
+    margin-top: -55%;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.viewhouse__notfound-img{
+    width: 600px;
+    height: 500px;
+}
+
+.viewhouse__notfound-text{
+    font-size: 35px;
+    margin-top: 0%;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 766px){
+    .viewhouse__cards{
+        margin-top: 40px;
+    }
+    
+    .searchbox__container{
+        width: 80%;
+        left: 10%;
+    }
+    
+    .searchbox__search{
+        height: 40px
+    }
+    
+    .searchbox__btn{
+        height: 40px;
+    }
+    
+    .viewhouse__notfound{
+        margin-top: -200%;
+    }
+    
+    .viewhouse__notfound-text{
+        font-size: 15px;
+        margin-top: -35%;
+    }
+}
+
+/*Edit or Delete*/
+.viewhouse__edit-or-delete-container{
+    float: right;
+    margin-top: 25px;
+}
+
+.viewhouse__edit-or-delete{
+    padding: 10px 20px;
+    font-size: 18px; 
+    background: #FF5A60;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.viewhouse__edit-or-delete:hover{
+    color: #FF5A60;
+    background: #fff;
+    border: 1px solid #FF5A60;
+}
+
+@media screen and (max-width: 766px){
+    .viewhouse__edit-or-delete-container{
+        margin-top: 60px;
+    }
+    
+    .mediaviewhouse__container{
+        margin-top: 85px;
+    }
+}
+
